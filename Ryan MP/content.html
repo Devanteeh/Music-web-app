@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music Content</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style type="text/css">
+	body{
+		padding: 0;
+		margin: 0;
+		background-color: #444443;
+	}
+	h1,h2{
+		text-align: left;
+		margin-left: 10px;
+		font-weight: 600;
+		color: #5c5c5c;
+	}
+	h3,p{
+		margin: 2px;
+	}
+	hr{
+		margin-left: 15px;
+		margin-right: 15px;
+		height: 1px;
+		border: 0;
+		border-top: 1px solid #fff;
+	}
+	.container{
+		width: 90%;
+		height: auto;
+		display: flex;
+		overflow-x: scroll;
+		overflow-y:hidden;
+		position: relative;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	.boxes{
+		padding: 10px;
+		box-sizing: border-box;
+		border-radius: 10px;
+		height: 200px;
+		min-width: 250px;
+		margin: 20px;
+		background: #e33745;
+		background-size: cover;
+	}
+	.box-content{
+		position: absolute;
+		bottom: 0;
+		margin-bottom: 15px;
+	}
+	.content{
+		width: 90%;
+		height: auto;
+		display: flex;
+		overflow-x: scroll;
+		overflow-y:hidden;
+		position: relative;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	.rounds{
+		padding: 10px;
+		box-sizing: border-box;
+		border-radius: 50px;
+		height: 100px;
+		min-width: 100px;
+		margin: 20px;
+		background: #e33745;
+		background-size: cover;
+	}
+	.artist-name{
+		position: absolute;
+		bottom: 0;
+	}
+	/*.small-music{
+		display: flex;
+		background-color: #fff;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #fff;
+	}*/
+	.main{
+		background: #444443;
+		height: auto;
+		box-shadow: none;
+	}
+	.tracks{
+		width: 90%;
+		height: auto;
+		overflow-y:scroll;
+		position: relative;
+		margin: 0 auto;
+		background-color: #444443;
+	}
+	/*.songs{
+		padding: 10px;
+		box-sizing: border-box;
+		border-radius: 10px;
+		height: 200px;
+		min-width: 250px;
+		margin: 20px;
+		background: #e33745;
+		background-size: cover;
+	}
+	.songs:hover{
+		transform: scale(1.1);
+		transition: 0.5s;
+		opacity: 0.5;
+	}*/
+</style>
+<body>
+<h1>RYAN KAFESU</h1>
+<hr>
+<h2>Top Albums</h2>
+<div class="container">
+	
+</div>
+<hr>
+<h2>Top Artists</h2>
+<div class="content">
+
+</div>
+<hr>
+<!--<h2>Current Hits</h2>
+<!--<div class="tracks">
+
+</div>
+<hr>-->
+<!-- small music player -->
+    <!--<div class="small_music">
+    	<div class="s_player_img">
+    		<div class="playing_img">
+    			<img src="images/1.jpg" alt="">
+    		</div>-->
+    	
+           <!-- wave animation part -->
+    	   <!--<div class="wave_animation">
+    			 <li></li>
+    			 <li></li>
+    			 <li></li>
+    			 <li></li>
+    			 <li></li>
+	       </div>
+	    </div>
+
+    	<div class="song_detail">
+    		<p id="song_name" style="color: #fff">Make Me Move</p>
+    		<p id="artist_name">NoCopyrightSounds [NCS]</p>
+    	</div>
+    	<button id="up_player"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+    </div>
+    <div class="popup">-->
+    	<!--  popup music player part -->
+    	<!--<div class="popup_music_player">
+        <div class="top">
+    	    <p>Now Playing</p>
+    	    <i class="fa fa-chevron-down" aria-hidden="true" id="down_player"></i>
+        </div>
+        
+        <div class="song_img">
+          <img src="images/1.jpg" alt="">
+        </div>
+
+       <div class="song_description">
+          <h3 id="current_track_name">Make Me Move</h3>
+          <p id="current_singer_name">NoCopyrightSounds [NCS]</p>
+       </div>
+
+        <div class="controlls">
+    	    <div class="progress_part">
+    		    <input type="range" min="0" max="100" value="0" id="slider" onchange="change_duration()">
+        		<div class="durations">
+        			<p id="current_duration">0:00</p>
+        		  <p id="total_duration">0:00</p>
+        		</div>
+          </div>-->
+    		
+          <!-- controlls btn's -->
+          <!--<div class="controlls_btns">
+      			<button id="backward_btn"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+      			<button id="play_pause_btn"><i class="fa fa-play" aria-hidden="true"></i></button>
+      			<button id="forward_btn"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>-->
+
+    <!--<div class="main">
+    <!-- top section 
+    <div class="top_section">
+  		<h5>Octave&nbsp;&nbsp;<i class="fa fa-headphones" aria-hidden="true"></i></h5>
+  	</div>-->
+
+
+  <!--<div class="tracks">
+    
+    <!-- list of song will add here from 'song_list.js' file -->
+    <!--<br>
+    <br>
+    <br>
+    <!-- small music player -->
+    <!--<div class="small_music_player">
+    	<div class="s_player_img">
+    		<div class="playing_img">
+    			<img src="images/1.jpg" alt="">
+    		</div>
+    	
+           <!-- wave animation part -->
+    	   <!--<div class="wave_animation">
+    			 <li></li>
+    			 <li></li>
+    			 <li></li>
+    			 <li></li>
+    			 <li></li>
+	       </div>
+	    </div>
+
+    	<div class="song_detail">
+    		<p id="song_name">Make Me Move</p>
+    		<p id="artist_name">NoCopyrightSounds [NCS]</p>
+    	</div>
+    	<i class="fa fa-chevron-up" aria-hidden="true" id="up_player"></i>
+    </div>
+    
+    <!--  popup music player part -->
+    <!--<div class="popup_music_player">
+        <div class="top">
+    	    <p>Now Playing</p>
+    	    <i class="fa fa-chevron-down" aria-hidden="true" id="down_player"></i>
+        </div>
+        
+        <div class="song_img">
+          <img src="images/1.jpg" alt="">
+        </div>
+
+       <div class="song_description">
+          <h3 id="current_track_name">Make Me Move</h3>
+          <p id="current_singer_name">NoCopyrightSounds [NCS]</p>
+       </div>
+
+        <div class="controlls">
+    	    <div class="progress_part">
+    		    <input type="range" min="0" max="100" value="0" id="slider" onchange="change_duration()">
+        		<div class="durations">
+        			<p id="current_duration">0:00</p>
+        		  <p id="total_duration">0:00</p>
+        		</div>
+          </div>
+    		
+          <!-- controlls btn's -->
+          <!--<div class="controlls_btns">
+      			<button id="backward_btn"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+      			<button id="play_pause_btn"><i class="fa fa-play" aria-hidden="true"></i></button>
+      			<button id="forward_btn"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+          </div>
+        </div>
+      </div>
+</div>-->
+</body>
+<!-- song list file--> 
+<script src="song_list.js"></script>
+<!-- javascript -->
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="artist.js"></script>
+<!--<script type="text/javascript" src="hits.js"></script>-->
+<script type="text/javascript" src="music.js"></script>
+<script type="text/javascript">
+	var album = ["album 1", "album 2", "album 3", "album 4", "album 5", "album 6", "album 7"];
+	var title = ["title 1", "title 2", "title 3", "title 4", "title 5", "title 6", "title 7"];
+	var artist = ["artist 1", "artist 2", "artist 3", "artist 4", "artist 5", "artist 6","artist 7"];
+	var movie = ["movie 1", "movie 2","movie 3", "movie 4", "movie 5", "movie 6", "movie 7"];
+	//for playlist
+	var dynamic = document.querySelector('.container');
+	for(var i=0;i<album.length;i++){
+		var fetch = document.querySelector('.container').innerHTML;
+		dynamic.innerHTML = fetch + `<div id="cards${i}" class="boxes">
+					<div class="box-content">
+						<a href="index.html" target="_blank"><h3>${album[i]}</h3><a>
+						<p>${title[i]}</p>
+						<p>${artist[i]}</p>
+						<p>${movie[i]}</p>
+					</div>
+				</div>`;
+		var bgmg = document.getElementById(`cards${i}`);
+		bgmg.style.backgroundImage = `url('img/${title[i]}.jpg')`;
+	}
+
+var upbtn = document.querySelector('#up_player');
+upbtn.onclick = function(){
+	document.getElementById("popup").style.display="block";
+}
+	
+</script>
+</html>
